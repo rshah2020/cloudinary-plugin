@@ -224,8 +224,9 @@ l_logo/c_scale,w_100/fl_layer_apply,g_north_west,x_10,y_10
 
 **Text overlays:**
 ```
-l_text:Arial_40:Hello%20World/co_yellow/fl_layer_apply,g_south
+co_yellow,l_text:Arial_40:Hello%20World/fl_layer_apply,g_south
 ```
+**Important**: Color (`co_`) and background (`b_`) are qualifiers — they must be in the **same component** as the text overlay declaration, not in a separate component.
 
 ### Borders & Rounding
 
@@ -454,7 +455,7 @@ if_w_gt_300_and_h_gt_200/c_fill,h_200,w_300/if_else/c_pad,h_200,w_300/if_end
 
 ```
 c_thumb,g_face,h_300,w_300/r_max/f_auto/q_auto              # Avatar
-c_fit,w_1200/l_logo,o_40,w_0.25/fl_layer_apply,g_south_east,x_20,y_20/f_auto/q_auto  # Watermark
+c_fit,w_1200/l_logo/c_scale,fl_relative,o_40,w_0.25/fl_layer_apply,g_south_east,x_20,y_20/f_auto/q_auto  # Watermark (25% width, fl_relative for relative sizing)
 e_background_removal/b_lightblue,c_pad,w_1.0/f_png          # Background removal + color
 co_yellow,l_text:Arial_60_bold:Hello/fl_layer_apply,g_north,y_50  # Text overlay
 du_5/vc_auto/f_auto/q_auto                                   # 5-second video preview
