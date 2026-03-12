@@ -16,7 +16,7 @@ Five Cloudinary MCP servers are pre-configured:
 | `cloudinary-analysis` | Analyze images and videos with AI |
 | `cloudinary-mediaflows` | Build and run automated media workflows |
 
-> **Note:** The `cloudinary-mediaflows` server requires your Cloudinary credentials (`cloud_name`, `api_key`, `api_secret`) to be set in the headers.
+> **Auth:** The first four servers use OAuth2 — you'll be prompted to log in with your Cloudinary account on first use via Cursor or Claude. The `cloudinary-mediaflows` server requires your Cloudinary credentials (`cloud_name`, `api_key`, `api_secret`) to be set in the headers in `mcp.json`.
 
 ### Skills
 
@@ -30,5 +30,5 @@ Two skills are included to give the agent deep Cloudinary knowledge:
 ## Getting Started
 
 1. Install this plugin in Cursor/Claude Code.
-2. Add your Cloudinary credentials to the `cloudinary-mediaflows` server headers in `mcp.json`.
+2. On first use, approve the OAuth login prompt for the MCP servers. For `cloudinary-mediaflows`, add your credentials to its headers in `mcp.json`.
 3. Ask your agent anything about Cloudinary — uploads, transformations, metadata, analysis, and more. The agent will automatically use the right skill and MCP server for the job.
