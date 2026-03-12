@@ -1,16 +1,16 @@
 {
   "mcpServers": {
     "cloudinary-asset-mgmt": {
-      "url": "https://asset-management.mcp.cloudinary.com/sse"
+      "url": "https://asset-management.mcp.cloudinary.com/mcp"
     },
     "cloudinary-env-config": {
-      "url": "https://environment-config.mcp.cloudinary.com/sse"
+      "url": "https://environment-config.mcp.cloudinary.com/mcp"
     },
     "cloudinary-smd": {
-      "url": "https://structured-metadata.mcp.cloudinary.com/sse"
+      "url": "https://structured-metadata.mcp.cloudinary.com/mcp"
     },
     "cloudinary-analysis": {
-      "url": "https://analysis.mcp.cloudinary.com/sse"
+      "url": "https://analysis.mcp.cloudinary.com/mcp"
     },
     "cloudinary-mediaflows": {
       "url": "https://mediaflows.mcp.cloudinary.com/v2/mcp",
