@@ -10,5 +10,7 @@
   "license": "MIT",
   "keywords": ["cursor", "plugin", "skills", "mcp", "images", "videos", "transformations", "asset management"],
   "logo": "assets/logo.svg",
-  "repository": "https://github.com/cloudinary-devs/cloudinary-plugin"
+  "repository": "https://github.com/cloudinary-devs/cloudinary-plugin",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
 }
