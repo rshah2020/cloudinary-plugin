@@ -12,5 +12,5 @@
   "logo": "assets/logo.svg",
   "repository": "https://github.com/cloudinary-devs/cloudinary-plugin",
   "skills": "./skills/",
-  "mcpServers": "./mcp.json"
+  "mcpServers": "./.mcp.json"
 }
